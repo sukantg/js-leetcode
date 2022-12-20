@@ -1,10 +1,7 @@
 //  Questions : 
 
 //  How can you reverse a string?
-//---------------------------------
 
-
- /* 
 function revByFunction(str){
     return str.split("").reverse().join("");
 }
@@ -25,14 +22,10 @@ function revByRecursion(str){
 }
 
 console.log(revByRecursion('hello'));
-*/
 
 
 // Check if a string is palindrome?
-//---------------------------------
 
-
-/*
 function pallindromeCheck(str){
     let re = /[^A-Za-z0-9]/g;
     let cleanedStr = str.toLowerCase().replace(re, '');
@@ -40,27 +33,31 @@ function pallindromeCheck(str){
     return reveresedStr===cleanedStr;   
 }
 console.log(pallindromeCheck("A man, a plan, a canal. Panama"));
-*/
+
 
 // How to get the matching characters in a string?
-
 
 
 // How to get the non-matching characters in a string?
 
 
-
 // How to calculate the number of vowels and consonants in a string?
-
 
 
 // How do you prove that the two strings are anagrams?
 
 
-
 // Find the count for the occurrence of a particular character in a string?
 
-
+function matchingCount(str,letter){
+    let count = 0;
+    for(let i = 0; i< str.length; i++){
+        if (str.charAt(i) === letter)
+            { count++ }
+    }
+    return count;
+}
+console.log(matchingCount('AxBxCx','x'));
 
 // How to verify if two strings are a rotation mutually?
 
