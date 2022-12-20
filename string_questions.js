@@ -32,39 +32,22 @@ function pallindromeCheck(str){
     let reveresedStr = cleanedStr.split('').reverse().join('');
     return reveresedStr===cleanedStr;   
 }
+
 console.log(pallindromeCheck("A man, a plan, a canal. Panama"));
 
 
 // How to get the matching characters in a string?
 
-
 // How to get the non-matching characters in a string?
-
 
 // How to calculate the number of vowels and consonants in a string?
 
-
 // How do you prove that the two strings are anagrams?
-
 
 // Find the count for the occurrence of a particular character in a string?
 
-function matchingCount(str,letter){
-    let count = 0;
-    for(let i = 0; i< str.length; i++){
-        if (str.charAt(i) === letter)
-            { count++ }
-    }
-    return count;
-}
-console.log(matchingCount('AxBxCx','x'));
-
 // How to verify if two strings are a rotation mutually?
 
-
-
 // How to calculate the number of numerical digits in a string?
-
-
 
 // How to compute the first character of a string that is not repeated?
